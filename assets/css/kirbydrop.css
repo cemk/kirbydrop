@@ -1,0 +1,79 @@
+/* @override 
+	http://localhost:8000/assets/css/kirbydrop.css */
+
+/*!
+ * Start Bootstrap - Shop Homepage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+
+.imagethumb img {
+	height: 120px;
+	object-fit: cover;
+	background-color: rgba(24, 188, 156, 0.34);
+}
+
+.thumbnail img {
+    width: 100%;
+    
+}
+
+
+.thumbnail {
+    padding: 0;
+    /*height: 200px;*/
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.item:nth-child(3n+1){
+	clear: both;
+}
+
+p.date {
+	font-style: italic;
+	color: #b4b4b4;
+}
+
+p {
+	word-wrap: break-word;
+}
+
+.filetitle {
+	font-size: 25px;
+	word-wrap: break-word;
+}
+
+.titleRow {
+	padding-bottom: 25px;
+	padding-top: 15px;
+}
+
+.downloadRow {
+	padding-bottom: 20px;
+}
