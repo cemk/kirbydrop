@@ -7,8 +7,8 @@
     
     
 	  <?php 
-	  	$list=page('uploads');
-	  	$uploads = page('uploads')->children()->invisible()->sortBy('modified', 'desc');
+	  	
+	  	$uploads = page('uploads')->children()->invisible()->sortBy('unixdate', 'desc');
 	  	
 	  	if($type = param('type')) {
 		
@@ -46,6 +46,12 @@
 					case 'code':
 						$uploads = $uploads->filter(function($child) {
 								  return $child->file()->type() == 'code';
+								});
+						break;
+						
+					case 'other':
+						$uploads = $uploads->filter(function($child) {
+								  return empty( $child->file()->type() );
 								});
 						break;
 				}

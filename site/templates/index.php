@@ -25,9 +25,7 @@
     <img class="img-responsive center-block" src="<?=$page->file()->url();?>" alt="<?php echo $page->title(); ?>" />
     
           
-      <?php echo $page->filesize(); ?>
-      <br />
-      <?php echo $page->date('d/m/Y', 'sharedate'); ?>
+      
       
       </div>
       </div>

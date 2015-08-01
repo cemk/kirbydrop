@@ -1,5 +1,5 @@
 <?php
-$notThumbable = array("psd", "ps", "eps", "ai", "sketch", "png");
+$notThumbable = array("psd", "ps", "eps", "ai", "sketch");
 
 
 if(in_array($upload->file()->extension(), $notThumbable) == true) {
@@ -21,7 +21,7 @@ $imageUrl = $image->url();
       
            
             <p><a href="<?php echo $upload->url(); ?>"><?php echo $upload->title(); ?></a></p>
-            <p class="date"><?php echo $upload->sharedate(); ?></p>
-        </div>
+            <p class="date"><?php echo $upload->sharedate()->relative(); ?></p>
+         </div>
     </div>
 </div>

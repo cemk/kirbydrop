@@ -29,5 +29,28 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 */
 
 c::set('content.file.extension', 'html');
-c::set('debug', true);
-//c::set('home', 'uploads');
+//c::set('debug', true);
+c::set('home', 'uploads');
+
+
+c::set('routes', array(
+  array(
+    'pattern' => '(:any)',
+    'action'  => function($uid) {
+
+      $page = page($uid);
+
+      if(!$page) $page = page('uploads/' . $uid);
+      if(!$page) $page = site()->errorPage();
+
+      return site()->visit($page);
+
+    }
+  ),
+  array(
+    'pattern' => 'uploads/(:any)',
+    'action'  => function($uid) {
+      go($uid);
+    }
+  )
+));
