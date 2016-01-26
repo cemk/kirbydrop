@@ -5,7 +5,7 @@
 ##Installing Kirby and Kirbydrop
 1) Get Kirby’s plainkit, the barebones Kirby installation.
 
-    git clone --recursive https://github.com/getkirby/plainkit.git .’
+    git clone --recursive https://github.com/getkirby/plainkit.git .
 
 2) Get Kirbydrop, and place the files into the Kirby installation.
 ```
