@@ -1,6 +1,6 @@
 # Kirbydrop - File list theme for Dropshare uploads
 
-[Kirbydrop](http://kirbydrop.webflow.io) is a [Kirby CMS](http://getkirby.com) theme to list your [Dropshare](http://getdropsha.re) uploads.
+[Kirbydrop](http://cemk.github.io/kirbydrop/) is a [Kirby CMS](http://getkirby.com) theme to list your [Dropshare](http://getdropsha.re) uploads.
 
 ##Installing Kirby and Kirbydrop
 1) Get Kirby’s plainkit, the barebones Kirby installation.
